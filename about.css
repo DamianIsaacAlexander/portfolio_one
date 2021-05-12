@@ -1,0 +1,129 @@
+#container-about{
+display: flex;
+justify-content: center;
+margin: 100px 200px 100px 200px;
+flex-direction: row;
+}
+.about-left-group{
+padding: 48px 80px 0 0;
+width: 58%;
+animation-name: fade;
+animation-duration: 2s;
+}
+.img-profile{
+height: 500px;
+width: 400px;
+object-fit: cover;
+border-radius: 5px;
+box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
+animation-name: fade;
+animation-duration: 2s;
+}
+.about-header{
+font-size: 2.5rem;
+text-align: center;
+font-family: 'Merriweather', serif;
+font-weight: 700;
+}
+.description-about{
+margin: 8px auto;
+font-size: 1.2rem;
+font-family: 'Merriweather', serif;
+font-weight: 400;
+width: 100%;
+overflow: hidden;
+border-right: .15rem solid #9cdcfe;
+white-space: nowrap;
+animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.about-cta-group{
+font-family: 'Merriweather-sans', sans-serif;
+font-weight: 500;
+display: flex;
+justify-content: center;
+margin-top: 16px;
+}
+.about-cta{
+margin: 0px 10px;
+font-size: 1.2rem;
+padding: 5px 12px;
+border-radius: 5px;
+border: 2px solid #fafafa;
+color: #fafafa;
+background-color: #7eb5d3;
+}
+.about-cta:hover{
+transition: .2s;
+background-color: #7eb5d300;
+color: #9cdcfe;
+border: 2px solid #9cdcfe;
+}
+.about-cta-reverse{
+margin: 0px 10px;
+font-size: 1.2rem;
+padding: 5px 12px;
+border-radius: 5px;
+border: 2px solid #9cdcfe;
+color: #9cdcfe;
+background-color: #7eb5d300;
+}
+.about-cta-reverse:hover{
+transition: .2s;
+background-color: #7eb5d3;
+color: #fafafa;
+border: 2px solid #fafafa;
+}
+
+
+@keyframes fade{
+    from{ opacity: 0%; }
+    to{ opacity: 100%; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9cdcfe; }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 812px) 
+and (orientation : portrait) {
+  #container-about{
+      flex-direction: column;
+      align-items: center;
+      margin: 100px 0px;
+  }
+  .about-left-group{
+      padding: 0;
+  }
+  .about-left-group{
+      position: relative;
+  }
+  .description-about{
+      position: relative;
+      top: 560px;
+  }  
+  .about-cta-group{
+      position: relative;
+      top: 570px;
+  }
+  .img-profile{
+      top: -50px;
+      position: relative;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 812px) 
+and (orientation : landscape) {
+  
+}

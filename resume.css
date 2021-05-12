@@ -1,0 +1,247 @@
+/*<------Resume------>*/
+#container-resume{
+background-color: #131313;
+min-height: 100vh;
+width: 50vw;
+display: flex;
+flex-direction: column;
+box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
+margin: 100px auto 100px auto;
+animation-name: fade;
+animation-duration: 2s;
+}
+.resume-header-container{
+position: relative;
+display: flex;
+}
+.resume-header-group-left{
+position: relative;
+display: flex;
+flex-direction: column;
+width: 80%;
+margin-top: 16px;
+z-index: 1;
+}
+.resume-header-group-left::after{
+content: '';
+height: 200px;
+width: 100px;
+position: absolute;
+transform: skew(20deg);
+top: -16px;
+right: -40px;
+z-index: -1;
+background-color: #131313;
+}
+.resume-header-top{
+display: flex;
+justify-content: space-between;
+margin-right: 48px;
+margin-left: 24px;
+}
+.resume-header-top > div:last-child{
+align-self: center;
+}
+.resume-header-top > div:last-child > .resume-header-external-link:first-child{
+margin-right: 24px;
+}
+.resume-header-external-link, .resume-to-top-link{
+font-size: 2rem;
+color: #fafafa;
+}
+.resume-header-external-link:hover, .resume-to-top-link:hover{
+color: #9cdcfe;
+}
+.resume-header-external-link{
+cursor: pointer;
+}
+.resume-header-group-left .horizontal-spacer{
+background-color: #9cdcfe;
+width: 50%;
+align-self: center;
+animation-name: grow-width;
+animation-duration: 2s;
+}
+.resume-header-list{
+font-family: 'Merriweather-sans', sans-serif;
+font-weight: 700;
+margin-top: 60px;
+list-style: none;
+align-self: center;
+display: flex;
+}
+.resume-header-list-item{
+margin: 0 24px;
+}
+.resume-header-name{
+font-family: 'Merriweather-sans', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+margin-bottom: 8px0;
+}
+.resume-header-email{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+.resume-header-email, .resume-section-link{
+color: #fafafa;
+font-size: 1.2rem;
+cursor: pointer;
+}
+.resume-header-email:hover, .resume-section-link:hover{
+color: #9cdcfe;
+transition: .2s;
+}
+.resume-header-email i{
+margin-right: .5rem;
+}
+.resume-header-profile-img{
+height: 200px;
+width: 300px;
+object-fit: cover;
+}
+.resume-body-container{
+padding: 16px 24px;
+}
+.resume-to-top-link{
+display: block;
+width: 50px;
+margin: 0 auto;
+}
+/*<------Previous Employment------>*/
+.resume-header-section-title{
+font-family: 'Merriweather-sans', sans-serif;
+font-weight: 700;
+border-bottom: 1px solid #fafafa;
+width: 40%;
+padding-bottom: 4px;
+font-size: 1.2rem;
+margin-top: 16px;
+}
+.resume-body-container > div > h3
+{
+margin-top: 0;
+}
+.resume-info-list{
+list-style: none;
+font-family: 'Merriweather', serif;
+font-weight: 400;
+margin-top: 8px;
+font-size: 1rem;
+}
+.resume-info-item{
+margin-top: 1.5px;
+}
+.resume-info-title{
+font-family: 'Merriweather-sans', sans-serif;
+font-style: italic;
+font-weight: 700;
+font-size: 1.2rem;
+}
+.resume-info-date{
+font-family: 'Merriweather-sans', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+font-style: italic;
+}
+.resume-info-group-container{
+margin-top: 16px;
+display: flex;
+}
+.resume-info-group-left{
+margin-right: 24px;
+}
+.vertical-spacer::before{
+content: '';
+position: absolute;
+left: -7px;
+background-color:#9cdcfe;
+height: 12px;
+width: 12px;
+border-radius: 100px;
+}
+.vertical-spacer{
+position: relative;
+left: 5px;
+top: 6px;
+border-left: 2px solid #9cdcfe;
+height: 150px;
+animation-name: grow;
+animation-duration: 2s;
+}
+/*<------Skills------>*/
+#skills{
+    margin-top: 16px;
+}
+.skill-group-container{
+display: flex;
+margin-top: 16px;
+justify-content: space-around;
+}
+.skill-card{
+font-family: 'Merriweather', serif;
+font-weight: 400;
+display: flex;
+align-items: center;
+padding: 5px;
+font-size: 1rem;
+}
+.skill-info-group{
+margin-left: 16px;
+display: flex;
+flex-direction: column;
+}
+.skill-info-underline{
+height: 2px;
+background-color: #9cdcfe;
+width: 50px;
+}
+
+/*<------Education------>*/
+#education{
+    margin-top: 16px;
+}
+.education-group-container{
+margin-top: 16px;
+margin-bottom: 16px;
+}
+.education-group-container > .resume-education-group:not(:first-child){
+margin-top: 16px;
+}
+.resume-education-title{
+font-family: 'Merriweather-sans', sans-serif;
+font-size: 1.2rem;
+font-weight: 700;
+font-style: italic;
+
+}
+.resume-education-location{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+.resume-education-group{
+text-align: center;
+}
+
+@keyframes fade{
+    from{ opacity: 0%; }
+    to{ opacity: 100%; }
+}
+
+@keyframes grow{
+    from{ height: 0px; }
+    to{ height: 150px;}
+}
+@keyframes grow-width{
+    from{ width: 0%; }
+    to{ width: 50%;}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 812px) 
+and (orientation : portrait) {
+    #container-resume{
+        width: 90vw;
+    }
+}
