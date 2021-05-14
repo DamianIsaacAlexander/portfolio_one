@@ -1,12 +1,12 @@
 <div id="previous-employment">
-    <h3 class="palette-blue resume-header-section-title">Career History & Experience</h3>
+    <h3 class="resume-header-section-title">Career History & Experience</h3>
     <div class="resume-info-group-container">
         <div class="resume-info-group-left">
             <div class="vertical-spacer"></div> 
         </div>
         <div class="resume-info-group-right">
             <h4 class="resume-info-title">Jeff Bonner R&D - Composite Technician</h4>
-            <p class="resume-info-date palette-blue">Sep 2020 - Feb 2021 (Temp)</p>
+            <p class="resume-info-date">Sep 2020 - Feb 2021 (Temp)</p>
             <ul class="resume-info-list">
                 <li class="resume-info-item">
                     Read engineering drawings to fabricate composite parts (showers, interior kits, window reveals, fairings, etc) and molds.
@@ -42,8 +42,8 @@
         </div>
         <div class="resume-info-group-right">
             <h4 class="resume-info-title">U.S Air Force Guard - F-16 Crew Chief/DynCorp - A10 Thunderbolt Aircraft Mechanic</h4>
-            <p class="resume-info-date palette-blue">Sep 2015 - Sep 2019 (National Guard)</p>
-            <p class="resume-info-date palette-blue">Mar 2019 - Nov 2019 (DynCorp)</p>
+            <p class="resume-info-date">Sep 2015 - Sep 2019 (National Guard)</p>
+            <p class="resume-info-date">Mar 2019 - Nov 2019 (DynCorp)</p>
             <ul class="resume-info-list">
                 <li class="resume-info-item">
                     Used schematic diagrams, drawings, charts and technical publications in operating, testing, removing, 
@@ -80,7 +80,7 @@
         </div>
         <div class="resume-info-group-right">
             <h4 class="resume-info-title">Erus Energy - Solar Installer</h4>
-            <p class="resume-info-date palette-blue">Sep 2018 - Mar 2019</p>
+            <p class="resume-info-date">Sep 2018 - Mar 2019</p>
             <ul class="resume-info-list">
                 <li class="resume-info-item">
                     Installed solar systems arrays using technical drawings.

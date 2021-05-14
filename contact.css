@@ -1,74 +1,87 @@
 /*<------Contact------>*/
 #container-contact{
-background-color: #131313;
-min-height: 20vh;
-width: 30vw;
-display: flex;
-flex-direction: column;
-padding: 16px 0 32px;
-align-items: center;
-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
-margin: 100px auto 100px auto;
-animation-name: fade;
-animation-duration: 2s;
-}
-.contact-header{
-font-family: 'Merriweather-sans', sans-serif;
-font-weight: 700;
-font-size: 1.5rem;
+    margin: 24px 14px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 32px;
+    align-items: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
+    animation: fade .5s ease-in;
 }
 
-#container-contact .horizontal-spacer{
-width: 40%;
-background-color: #9cdcfe;
-animation-name: grow-width;
-animation-duration: 2s;
+.contact-header{
+    font-family: 'Merriweather-sans', sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    font-size: 20px;
 }
+
+#container-contact div.horizontal-line{
+    width: 50%;
+    background-color: #9cdcfe;
+    animation: grow-w-mobile-s .5s ease-in;
+}
+
 .contact-form{
-width: 75%;
-color:#fafafa;
-display: flex;
-flex-direction: column;
+    width: 80%;
+    color:#fafafa;
+    display: flex;
+    flex-direction: column;
 }
+
 label{
-font-family: 'Merriweather-sans', sans-serif;
-font-weight: 700;
-font-size: 1.2rem;
-margin-top: 8px;
-margin-bottom: 8px;
+    font-family: 'Merriweather-sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
+
 input, textarea{
-font-family: 'Merriweather', serif;
-font-weight: 400;
-background-color: #fafafa;
-font-size: 1rem;
-padding: 6px;
+    border: 2px solid transparent;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    background-color: #fafafa;
+    font-size: 16px;
+    padding: 6px;
 }
+
+input:focus, textarea:focus{
+    outline:none;
+    border: 2px solid #9cdcfe;
+}
+
 input[type=submit]{
-cursor: pointer;
-font-family: 'Merriweather-sans', sans-serif;
-font-weight: 500;
-margin-top: 16px;
-border-radius: 5px;
-width: 50%;
-background-color:#7eb5d3;
-border: 2px solid #fafafa;
-color: #fafafa;
-padding: 8px 5px;
-margin-left: auto;
-margin-right: auto;
+    cursor: pointer;
+    font-family: 'Merriweather-sans', sans-serif;
+    font-weight: 500;
+    margin-top: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 50%;
+    background-color:#7eb5d3;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    padding: 8px 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 input[type=submit]:hover{
-background-color: #7eb5d300;
-border: 2px solid #7eb5d3;
-color: #7eb5d3;
-transition: .2s;
+    background-color: #7eb5d300;
+    border: 2px solid #7eb5d3;
+    color: #7eb5d3;
+    transition: .2s;
 }
-@keyframes fade{
-    from{ opacity: 0%; }
-    to{ opacity: 100%; }
-}
-@keyframes grow-width{
-    from{ width: 0%; }
-    to{ width: 40%; }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 812px) 
+and (orientation : landscape) {
+
+    #container-contact{
+        margin: 24px 24px;
+    }
+
 }
