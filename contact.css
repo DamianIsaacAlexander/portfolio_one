@@ -53,6 +53,7 @@ input:focus, textarea:focus{
 }
 
 input[type=submit]{
+    -webkit-appearance: none;
     cursor: pointer;
     font-family: 'Merriweather-sans', sans-serif;
     font-weight: 500;
