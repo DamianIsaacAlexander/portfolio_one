@@ -1,6 +1,5 @@
 function myFunction() 
 {
-
     let x = document.getElementById("nav-list");
     if(x.classList.contains("active"))
     {
@@ -13,3 +12,10 @@ function myFunction()
         x.classList.remove("inactive")
     }
 }
+
+window.addEventListener('click', (e) => {
+    if(e.target != document.getElementById("nav-list"))
+    {
+        console.log("not nav");
+    }
+});
