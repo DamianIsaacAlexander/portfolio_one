@@ -12,14 +12,3 @@ function myFunction()
         x.classList.remove("inactive")
     }
 }
-
-window.addEventListener('click', (e) => {
-    e.stopPropagation();
-    let target = e.target;
-    let navIconElement = document.getElementById("nav-icon");
-    let navListElement = document.getElementById("nav-list");
-    if(target !== navIconElement && navListElement.classList.contains("active")){
-        navListElement.classList.remove("active");
-        navListElement.classList.add("inactive");
-    }
-});
