@@ -102,3 +102,39 @@ and (orientation : landscape) {
     }
     
 }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .about-top-group h2.about-header, .about-top-group h3.about-header{
+        font-size: 26px;
+    }
+    #nav-icon{
+        padding: 14px 24px;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape){
+    .about-top-group h2.about-header, .about-top-group h3.about-header{
+        font-size: 26px;
+    }
+    #container-about{
+        height: 100%;
+        position: relative; 
+    }
+    #nav-icon{
+        padding: 14px 24px;
+    }
+    .about-top-group, .about-bottom-group{
+        position: relative;
+        left: -100px;
+        top: -25px;
+    }
+    .about-middle-group{
+        position: absolute;
+        right: 50px;
+    }
+}
+
+@media (min-width:1025px)
+{
+    
+}

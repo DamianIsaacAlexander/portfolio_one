@@ -24,7 +24,7 @@
 }
 
 .contact-form{
-    width: 80%;
+    width: 90%;
     color:#fafafa;
     display: flex;
     flex-direction: column;
@@ -85,4 +85,36 @@ and (orientation : landscape) {
         margin: 24px 24px;
     }
 
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    #container-contact{
+        margin: 48px 80px;
+        padding: 32px 0 32px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .contact-header{
+        font-size: 26px;
+    }
+    .contact-form{
+        width: 70%;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape){
+    #container-contact{
+        margin: 48px 190px;
+        padding: 32px 0 32px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .contact-header{
+        font-size: 26px;
+    }
+    .contact-form{
+        width: 70%;
+    }
 }

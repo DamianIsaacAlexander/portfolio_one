@@ -207,3 +207,45 @@ a.nav-link, #nav-icon, .nav-header{
     height: 2px;
     background-color: rgb(250, 250, 250);
 }
+
+/*<------Ipad------>*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    h1.nav-header, #nav-icon, .footer-group-right a, a.nav-link{
+        font-size: 20px;
+    }
+    .footer-copy-right{
+        font-size: 12px;
+    }
+    .footer-external-link{
+        font-size: 24px;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    h1.nav-header, #nav-icon, .footer-group-right a, a.nav-link{
+        font-size: 20px;
+    }
+    .footer-copy-right{
+        font-size: 12px;
+    }
+    .footer-external-link{
+        font-size: 24px;
+    }
+}
+
+
+/*<------DeskTop------>*/
+@media (min-width:1025px)
+{
+    h1.nav-header{
+        background-color: transparent;
+    }
+    #nav-main{
+        display: flex;
+        box-shadow: unset;
+    }
+
+    #nav-list{
+        display: flex;
+    }
+}

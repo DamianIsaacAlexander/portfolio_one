@@ -112,7 +112,7 @@
     font-weight: 700;
     border-bottom: 1px solid #fafafa;
     padding-bottom: 4px;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 16px;
     color: #9cdcfe;
 }
@@ -134,12 +134,12 @@
     font-family: 'Merriweather-sans', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
 }
 .resume-info-date{
     color: #9cdcfe;
     font-family: 'Merriweather-sans', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     font-style: italic;
 }
@@ -268,4 +268,47 @@ and (orientation : landscape) {
         background-color: rgba(0, 0, 0, 0.0);
     }
     
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    #container-resume{
+        margin: 24px 32px;
+    }
+    .resume-header-group-bottom::after{
+        content: '';
+        height: 150px;
+        width: 150px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .resume-header-name,  .resume-header-external-link{
+        font-size: 26px;
+    }
+    .resume-section-link,  .resume-header-section-title, .resume-info-title, .resume-info-date{
+        font-size: 20px;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape){
+    #container-resume{
+        margin: 24px 32px;
+    }
+    .resume-header-group-bottom::after{
+        content: '';
+        height: 150px;
+        width: 150px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .resume-header-name,  .resume-header-external-link{
+        font-size: 24px;
+    }
+    .resume-section-link,  .resume-header-section-title, .resume-info-title, .resume-info-date{
+        font-size: 20px;
+    }
 }
