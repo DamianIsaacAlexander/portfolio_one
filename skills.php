@@ -6,7 +6,7 @@
       <div class="skill-group-left">
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_learning.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_learning.svg"
             height:="40px"
             width="40px"
             style="color:red;"
@@ -18,7 +18,7 @@
         </div>
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_communication.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_communication.svg"
             height:="40px"
             width="40px"
             style="color:red;"
@@ -30,7 +30,7 @@
         </div>
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_thinking.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_thinking.svg"
             height:="40px"
             width="40px"
             style="color:red;"
@@ -45,7 +45,7 @@
       <div class="skill-group-right">
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_team.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_team.svg"
             height:="40px"
             width="40px"
             style="color:red;"
@@ -57,7 +57,7 @@
         </div>
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_word.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_word.svg"
             height:="40px"
             width="40px"
             style="color:red;"
@@ -69,7 +69,7 @@
         </div>
         <div class="skill-card">
           <img 
-            src="http://localhost/portfolio/img/skills_mechanical.svg"
+            src="https://damianalexanderisaac.herokuapp.com/img/skills_mechanical.svg"
             height:="40px"
             width="40px"
             style="color:red;"

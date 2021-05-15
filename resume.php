@@ -35,7 +35,7 @@
                         <div class="horizontal-line"></div>
                     </div>
                     <div class="resume-header-group-bottom">
-                        <img class="resume-header-profile-img" src="http://localhost/Portfolio/img/profile_picture.jpeg" alt="profile img">
+                        <img class="resume-header-profile-img" src="https://damianalexanderisaac.herokuapp.com/img/profile_picture.jpeg" alt="profile img">
                     </div>
                 </div>
                 <div class="resume-body-container">
