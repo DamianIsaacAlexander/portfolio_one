@@ -14,8 +14,12 @@ function myFunction()
 }
 
 window.addEventListener('click', (e) => {
-    if(e.target != document.getElementById("nav-list"))
-    {
-        console.log("not nav");
+    e.stopPropagation();
+    let target = e.target;
+    let navIconElement = document.getElementById("nav-icon");
+    let navListElement = document.getElementById("nav-list");
+    if(target !== navIconElement && navListElement.classList.contains("active")){
+        navListElement.classList.remove("active");
+        navListElement.classList.add("inactive");
     }
 });
