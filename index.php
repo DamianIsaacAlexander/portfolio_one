@@ -22,7 +22,7 @@
                     
             </div>
             <div class="about-middle-group">
-                <img class="img-profile" src="http://localhost/Portfolio/img/profile_picture.jpeg" alt="">
+                <img class="img-profile" src="https://damianalexanderisaac.herokuapp.com/img/profile_picture.jpeg" alt="">
             </div>
             <div class="about-bottom-group">
                 <p class="description-about">
