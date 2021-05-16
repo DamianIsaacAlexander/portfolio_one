@@ -1,11 +1,10 @@
 /*<------About-Mobile------>*/
 #container-about{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     padding: 24px 14px;
 }
-
 .about-top-group, .about-middle-group, .about-bottom-group{
     text-align: center;
 }
@@ -13,85 +12,72 @@
 .about-middle-group{
     margin: 16px 0;
 }
-
 .about-top-group{
-    overflow: hidden;
     font-family: 'Merriweather', serif;
     font-weight: 700;
+    overflow: hidden;
 }
-
 .about-top-group h2{
-    font-size: 24px;
-    color: #fafafa;
     animation: fade-slide-right .5s ease-in;
-}
-
-.about-top-group h3{
+    color: #fafafa;
     font-size: 24px;
-    color: #9cdcfe;
-    animation: fade-slide-left .5s ease-in;
 }
-
+.about-top-group h3{
+    animation: fade-slide-left .5s ease-in;
+    color: #9cdcfe;
+    font-size: 24px;
+}
 .img-profile{
-    height: 300px;
-    width: 200px;
-    object-fit: cover;
     border-radius: 5px;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
+    height: 300px;
+    object-fit: cover;
+    width: 200px;
 }
-
 .img-profile, .about-bottom-group{
     animation: fade .5s ease-in;
 }
-
 .about-cta-group{
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
-
 .description-about{
     color: #fafafa;
-    font-size: 16px;
     font-family: 'Merriweather', serif;
+    font-size: 16px;
 }
-
 .about-cta, .about-cta-reverse{
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 0px 10px;
-    padding: 5px 12px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 17px;
+    margin: 0px 10px;
+    padding: 5px 12px;
+    text-decoration: none;
 }
-
 .about-cta{
+    background-color: #7eb5d3;
     border: 2px solid #fafafa;
     color: #fafafa;
-    background-color: #7eb5d3;
 }
-
 .about-cta-reverse{
+    background-color: #7eb5d300;
     border: 2px solid #9cdcfe;
     color: #9cdcfe;
-    background-color: #7eb5d300;
 }
-
 .about-cta:hover{
-    transition: .2s;
     background-color: #7eb5d300;
-    color: #9cdcfe;
     border: 2px solid #9cdcfe;
-}
-
-.about-cta-reverse:hover{
+    color: #9cdcfe;
     transition: .2s;
-    background-color: #7eb5d3;
-    color: #fafafa;
-    border: 2px solid #fafafa;
 }
-
+.about-cta-reverse:hover{
+    background-color: #7eb5d3;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    transition: .2s;
+}
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 812px) 
@@ -102,16 +88,12 @@ and (orientation : landscape) {
     }
     
 }
-
+/*<------Ipad----->*/
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     .about-top-group h2.about-header, .about-top-group h3.about-header{
         font-size: 26px;
     }
-    #nav-icon{
-        padding: 14px 24px;
-    }
 }
-
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape){
     .about-top-group h2.about-header, .about-top-group h3.about-header{
         font-size: 26px;
@@ -120,12 +102,9 @@ and (orientation : landscape) {
         height: 100%;
         position: relative; 
     }
-    #nav-icon{
-        padding: 14px 24px;
-    }
     .about-top-group, .about-bottom-group{
-        position: relative;
         left: -100px;
+        position: relative;
         top: -25px;
     }
     .about-middle-group{
@@ -133,8 +112,30 @@ and (orientation : landscape) {
         right: 50px;
     }
 }
+/*<------Desktop------>*/
+@media only screen and (min-width: 1200px) {
+    #container-about{
+        margin: 100px 200px;
+        padding: 0;
+        position: relative;
+    }
+    .about-top-group h2.about-header, .about-top-group h3.about-header{
+        font-size: 40px;
+    }
 
-@media (min-width:1025px)
-{
-    
+    .about-middle-group{
+        position: absolute;
+        top: 0;
+        right: 200px;
+    }
+    .about-bottom-group, .about-top-group{
+        position: relative;
+        top: 100px;
+        left: -250px;
+    }
+    .img-profile{
+        right: 300px;
+        height: 500px;
+        width: 400px;
+    }
 }
