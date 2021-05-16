@@ -29,8 +29,8 @@
                     I'm a full-stack web developer, currently pursuing a bachelor's in computer science.
                 </p> 
                 <div class="about-cta-group">
-                    <a href="https://damianalexanderisaac.herokuapp.com/contact.php" class="about-cta">Contact</a>
-                    <a href="https://damianalexanderisaac.herokuapp.com/resume.php" class="about-cta-reverse">Resume</a>
+                    <a href="https://damianalexanderisaac.herokuapp.com/pages/contact.php" class="about-cta">Contact</a>
+                    <a href="https://damianalexanderisaac.herokuapp.com/pages/resume.php" class="about-cta-reverse">Resume</a>
                 </div>     
             </div>
         </div>
