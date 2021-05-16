@@ -4,7 +4,7 @@
     <title>Resume - Damian Isaac</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        <?php include 'style.css'; ?>
+       <?php include (dirname(__FILE__).'../../style.css')?>    
     </style>
     <script src="https://kit.fontawesome.com/7d91046a00.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <main class="container-page">
-        <?php include "header.php"?>    
+    <?php include (dirname(__FILE__).'../../components/navigation.php')?>   
     </main>
-    <?php include "footer.php"?>    
+    <?php include (dirname(__FILE__).'../../components/footer.php')?>   
 </body>
